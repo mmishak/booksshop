@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DIAGRAM DIAGRAMTYPE="Physical" FILE_VERSION="2" ZOOM="100" SCROLLH="0" SCROLLV="0" PAPERID="9" PAPERORIENTATION="0" DBTYPE="3">
+    <OPTIONS OPTION0="OPT_VIEW_DISPLAY_LINK_NAMES_IN_DGR=1" OPTION1="OPT_IDENTIFIER_CASE=1" OPTION2="OPT_PHYS_TARGET_VERSION=2.5" OPTION3="OPT_PHYS_FB_DEFAULT_CHARSET=NONE">
+    </OPTIONS>
+    <ITEMS>
+        <DOMAINS>
+        </DOMAINS>
+        <TABLES>
+            <TABLE ID="{BEEB181F-603D-497C-91DD-1C16086E3B47}" NAME="TABLE_AUTHOR" PKNAME="PK_TABLE_AUTHOR" TT="0">
+                <COLUMNS>
+                    <COLUMN NAME="ID" DT="Integer" ISID="1" NOTE="" REQ="1" ORDER="0">
+                    </COLUMN>
+                    <COLUMN NAME="NAME" DT="VarChar" NOTE="" DTL="100" ORDER="1" COLL="NONE">
+                    </COLUMN>
+                </COLUMNS>
+                <VPROPS>
+                    <FONT>
+                    </FONT>
+                    <COLORS FCLR="16579836" OLCLR="0" HDRCLR="10789024">
+                    </COLORS>
+                    <POS POS="913,272">
+                    </POS>
+                </VPROPS>
+            </TABLE>
+            <TABLE ID="{302A41FB-3CE0-49AA-9267-4FF3BE45B095}" NAME="TABLE_BOOK" PKNAME="PK_TABLE_BOOK" TT="0">
+                <COLUMNS>
+                    <COLUMN NAME="ID" DT="Integer" ISID="1" NOTE="" REQ="1" ORDER="0">
+                    </COLUMN>
+                    <COLUMN NAME="TITLE" DT="VarChar" NOTE="" DTL="100" ORDER="1" COLL="NONE">
+                    </COLUMN>
+                    <COLUMN NAME="PUBLISH_HOUSE_ID" DT="Integer" NOTE="" ORDER="2">
+                    </COLUMN>
+                    <COLUMN NAME="DECRIPTION" DT="VarChar" NOTE="" DTL="200" ORDER="3" COLL="NONE">
+                    </COLUMN>
+                    <COLUMN NAME="YEAR_ISSUE" DT="Integer" NOTE="" ORDER="4">
+                    </COLUMN>
+                    <COLUMN NAME="RATING" DT="Float" NOTE="" ORDER="5">
+                    </COLUMN>
+                    <COLUMN NAME="PRICE" DT="Float" NOTE="" ORDER="6">
+                    </COLUMN>
+                </COLUMNS>
+                <VPROPS>
+                    <FONT>
+                    </FONT>
+                    <COLORS FCLR="16579836" OLCLR="0" HDRCLR="10789024">
+                    </COLORS>
+                    <POS POS="296,40">
+                    </POS>
+                </VPROPS>
+            </TABLE>
+            <TABLE ID="{823A4DF3-90C8-4E11-977B-AEADD72891BE}" NAME="TABLE_BOOK_AUTHORS" PKNAME="PK_TABLE_BOOK_AUTHORS" TT="0">
+                <COLUMNS>
+                    <COLUMN NAME="AUTHOR_ID" DT="Integer" NOTE="" ORDER="0">
+                    </COLUMN>
+                    <COLUMN NAME="BOOK_ID" DT="Integer" NOTE="" ORDER="1">
+                    </COLUMN>
+                </COLUMNS>
+                <VPROPS>
+                    <FONT>
+                    </FONT>
+                    <COLORS FCLR="16579836" OLCLR="0" HDRCLR="10789024">
+                    </COLORS>
+                    <POS POS="666,112">
+                    </POS>
+                </VPROPS>
+            </TABLE>
+            <TABLE ID="{D8953BFB-1D1E-437B-AFFA-1FD781A15853}" NAME="TABLE_BOOK_CATEGORY" PKNAME="PK_TABLE_BOOK_CATEGORY" TT="0">
+                <COLUMNS>
+                    <COLUMN NAME="CATEGORY_ID" DT="Integer" NOTE="" ORDER="0">
+                    </COLUMN>
+                    <COLUMN NAME="BOOK_ID" DT="Integer" NOTE="" ORDER="1">
+                    </COLUMN>
+                </COLUMNS>
+                <VPROPS>
+                    <FONT>
+                    </FONT>
+                    <COLORS FCLR="16579836" OLCLR="0" HDRCLR="10789024">
+                    </COLORS>
+                    <POS POS="442,368">
+                    </POS>
+                </VPROPS>
+            </TABLE>
+            <TABLE ID="{6665950A-0FB8-4373-A56B-118E31EDE761}" NAME="TABLE_BOOK_REWARDS" PKNAME="PK_TABLE_BOOK_REWARDS" TT="0">
+                <COLUMNS>
+                    <COLUMN NAME="REWARD_ID" DT="Integer" NOTE="" ORDER="0">
+                    </COLUMN>
+                    <COLUMN NAME="BOOK_ID" DT="Integer" NOTE="" ORDER="1">
+                    </COLUMN>
+                    <COLUMN NAME="YEAR_REWARD" DT="Integer" NOTE="" ORDER="2">
+                    </COLUMN>
+                </COLUMNS>
+                <VPROPS>
+                    <FONT>
+                    </FONT>
+                    <COLORS FCLR="16579836" OLCLR="0" HDRCLR="10789024">
+                    </COLORS>
+                    <POS POS="657,296">
+                    </POS>
+                </VPROPS>
+            </TABLE>
+            <TABLE ID="{823B7805-3EB0-45E1-B413-101233DB7189}" NAME="TABLE_CATEGORY" PKNAME="PK_TABLE_CATEGORY" TT="0">
+                <COLUMNS>
+                    <COLUMN NAME="ID" DT="Integer" ISID="1" NOTE="" REQ="1" ORDER="0">
+                    </COLUMN>
+                    <COLUMN NAME="NAME" DT="VarChar" NOTE="" DTL="100" ORDER="1" COLL="NONE">
+                    </COLUMN>
+                </COLUMNS>
+                <VPROPS>
+                    <FONT>
+                    </FONT>
+                    <COLORS FCLR="16579836" OLCLR="0" HDRCLR="10789024">
+                    </COLORS>
+                    <POS POS="469,496">
+                    </POS>
+                </VPROPS>
+            </TABLE>
+            <TABLE ID="{616DB6E8-6045-47D3-8C22-85A2BC717699}" NAME="TABLE_CLIENT" PKNAME="PK_TABLE_CLIENT" TT="0">
+                <COLUMNS>
+                    <COLUMN NAME="ID" DT="Integer" ISID="1" NOTE="" REQ="1" ORDER="0">
+                    </COLUMN>
+                    <COLUMN NAME="NAME" DT="VarChar" NOTE="" DTL="100" ORDER="1" COLL="NONE">
+                    </COLUMN>
+                    <COLUMN NAME="EMAIL" DT="VarChar" NOTE="" DTL="100" ORDER="2" COLL="NONE">
+                    </COLUMN>
+                    <COLUMN NAME="PASS" DT="VarChar" NOTE="" DTL="100" ORDER="3" COLL="NONE">
+                    </COLUMN>
+                    <COLUMN NAME="PHONE" DT="VarChar" NOTE="" DTL="100" ORDER="4" COLL="NONE">
+                    </COLUMN>
+                </COLUMNS>
+                <VPROPS>
+                    <FONT>
+                    </FONT>
+                    <COLORS FCLR="16579836" OLCLR="0" HDRCLR="10789024">
+                    </COLORS>
+                    <POS POS="7,372">
+                    </POS>
+                </VPROPS>
+            </TABLE>
+            <TABLE ID="{F5D731D4-57A8-4A17-9F3A-C37746867A9B}" NAME="TABLE_ORDER" PKNAME="PK_TABLE_ORDER" TT="0">
+                <COLUMNS>
+                    <COLUMN NAME="ID" DT="Integer" ISID="1" NOTE="" REQ="1" ORDER="0">
+                    </COLUMN>
+                    <COLUMN NAME="CLIENT_ID" DT="Integer" NOTE="" ORDER="1">
+                    </COLUMN>
+                    <COLUMN NAME="DATE_ORDER" DT="Date" NOTE="" ORDER="2">
+                    </COLUMN>
+                    <COLUMN NAME="PRICE" DT="Float" NOTE="" ORDER="3">
+                    </COLUMN>
+                </COLUMNS>
+                <VPROPS>
+                    <FONT>
+                    </FONT>
+                    <COLORS FCLR="16579836" OLCLR="0" HDRCLR="10789024">
+                    </COLORS>
+                    <POS POS="224,512">
+                    </POS>
+                </VPROPS>
+            </TABLE>
+            <TABLE ID="{59EC49B0-B10E-4AC8-9899-D185648A4B17}" NAME="TABLE_ORDER_LIST" PKNAME="PK_TABLE_ORDER_LIST" TT="0">
+                <COLUMNS>
+                    <COLUMN NAME="ORDER_ID" DT="Integer" NOTE="" ORDER="0">
+                    </COLUMN>
+                    <COLUMN NAME="BOOK_ID" DT="Integer" NOTE="" ORDER="1">
+                    </COLUMN>
+                    <COLUMN NAME="PRICE" DT="Float" NOTE="" ORDER="2">
+                    </COLUMN>
+                    <COLUMN NAME="NUMBER" DT="Integer" NOTE="" ORDER="3">
+                    </COLUMN>
+                </COLUMNS>
+                <VPROPS>
+                    <FONT>
+                    </FONT>
+                    <COLORS FCLR="16579836" OLCLR="0" HDRCLR="10789024">
+                    </COLORS>
+                    <POS POS="223,304">
+                    </POS>
+                </VPROPS>
+            </TABLE>
+            <TABLE ID="{B8291159-BBA0-4436-8D2C-69D4D446C7BC}" NAME="TABLE_PUBLISHING_HOUSE" PKNAME="PK_TABLE_PUBLISHING_HOUSE" TT="0">
+                <COLUMNS>
+                    <COLUMN NAME="ID" DT="Integer" ISID="1" NOTE="" REQ="1" ORDER="0">
+                    </COLUMN>
+                    <COLUMN NAME="NAME" DT="VarChar" NOTE="" DTL="100" ORDER="1" COLL="NONE">
+                    </COLUMN>
+                </COLUMNS>
+                <VPROPS>
+                    <FONT>
+                    </FONT>
+                    <COLORS FCLR="16579836" OLCLR="0" HDRCLR="10789024">
+                    </COLORS>
+                    <POS POS="24,8">
+                    </POS>
+                </VPROPS>
+            </TABLE>
+            <TABLE ID="{56ABCEB2-7154-4A99-B7AD-2C7E08955E58}" NAME="TABLE_REVIEWS" PKNAME="PK_TABLE_REVIEWS" TT="0">
+                <COLUMNS>
+                    <COLUMN NAME="ID" DT="Integer" ISID="1" NOTE="" REQ="1" ORDER="0">
+                    </COLUMN>
+                    <COLUMN NAME="CLIENT_ID" DT="Integer" NOTE="" ORDER="1">
+                    </COLUMN>
+                    <COLUMN NAME="BOOK_ID" DT="Integer" NOTE="" ORDER="2">
+                    </COLUMN>
+                    <COLUMN NAME="TEXT" DT="VarChar" NOTE="" DTL="250" ORDER="3" COLL="NONE">
+                    </COLUMN>
+                    <COLUMN NAME="DATE_REVIEW" DT="Date" NOTE="" ORDER="4">
+                    </COLUMN>
+                </COLUMNS>
+                <VPROPS>
+                    <FONT>
+                    </FONT>
+                    <COLORS FCLR="16579836" OLCLR="0" HDRCLR="10789024">
+                    </COLORS>
+                    <POS POS="0,168">
+                    </POS>
+                </VPROPS>
+            </TABLE>
+            <TABLE ID="{9FDC528B-D1BA-471C-AF65-37DCA561B11D}" NAME="TABLE_REWARDS" PKNAME="PK_TABLE_REWARDS" TT="0">
+                <COLUMNS>
+                    <COLUMN NAME="ID" DT="Integer" ISID="1" NOTE="" REQ="1" ORDER="0">
+                    </COLUMN>
+                    <COLUMN NAME="NAME" DT="VarChar" NOTE="" DTL="100" ORDER="1" COLL="NONE">
+                    </COLUMN>
+                </COLUMNS>
+                <VPROPS>
+                    <FONT>
+                    </FONT>
+                    <COLORS FCLR="16579836" OLCLR="0" HDRCLR="10789024">
+                    </COLORS>
+                    <POS POS="761,464">
+                    </POS>
+                </VPROPS>
+            </TABLE>
+        </TABLES>
+        <VIEWS>
+        </VIEWS>
+        <FOREIGN_KEYS>
+            <FOREIGN_KEY NAME="FK_TABLE_BOOK" ID="{683C6F39-E04E-4237-BDB8-B83D44F62C2E}" CHILDID="{302A41FB-3CE0-49AA-9267-4FF3BE45B095}" PARENTID="{B8291159-BBA0-4436-8D2C-69D4D446C7BC}" PARENT_CONS="PK_TABLE_PUBLISHING_HOUSE" UA="1" DA="1" MT="0">
+                <COLUMNS COL1="PUBLISH_HOUSE_ID">
+                </COLUMNS>
+            </FOREIGN_KEY>
+            <FOREIGN_KEY NAME="FK_TABLE_BOOK_AUTHORS" ID="{37EA71D7-0A4C-408E-9349-353EE38D95D5}" CHILDID="{823A4DF3-90C8-4E11-977B-AEADD72891BE}" PARENTID="{BEEB181F-603D-497C-91DD-1C16086E3B47}" PARENT_CONS="PK_TABLE_AUTHOR" UA="1" DA="1" MT="0">
+                <COLUMNS COL1="AUTHOR_ID">
+                </COLUMNS>
+            </FOREIGN_KEY>
+            <FOREIGN_KEY NAME="FK_TABLE_BOOK_AUTHORS_TWO" ID="{B1460F57-C034-46CE-9891-670C548D06FD}" CHILDID="{823A4DF3-90C8-4E11-977B-AEADD72891BE}" PARENTID="{302A41FB-3CE0-49AA-9267-4FF3BE45B095}" PARENT_CONS="PK_TABLE_BOOK" UA="1" DA="1" MT="0">
+                <COLUMNS COL1="BOOK_ID">
+                </COLUMNS>
+            </FOREIGN_KEY>
+            <FOREIGN_KEY NAME="FK_TABLE_BOOK_CATEGORY" ID="{C5480C79-6957-40F9-AC54-EC2AE035441B}" CHILDID="{D8953BFB-1D1E-437B-AFFA-1FD781A15853}" PARENTID="{302A41FB-3CE0-49AA-9267-4FF3BE45B095}" PARENT_CONS="PK_TABLE_BOOK" UA="1" DA="1" MT="0">
+                <COLUMNS COL1="BOOK_ID">
+                </COLUMNS>
+            </FOREIGN_KEY>
+            <FOREIGN_KEY NAME="FK_TABLE_BOOK_CATEGORY_TWO" ID="{3F867CDE-441B-4684-861F-8D046EC45C5B}" CHILDID="{D8953BFB-1D1E-437B-AFFA-1FD781A15853}" PARENTID="{823B7805-3EB0-45E1-B413-101233DB7189}" PARENT_CONS="PK_TABLE_CATEGORY" UA="1" DA="1" MT="0">
+                <COLUMNS COL1="CATEGORY_ID">
+                </COLUMNS>
+            </FOREIGN_KEY>
+            <FOREIGN_KEY NAME="FK_TABLE_BOOK_REWARDS" ID="{89DAB966-39C6-4F68-9DA0-7ECB9BF9C881}" CHILDID="{6665950A-0FB8-4373-A56B-118E31EDE761}" PARENTID="{9FDC528B-D1BA-471C-AF65-37DCA561B11D}" PARENT_CONS="PK_TABLE_REWARDS" UA="1" DA="1" MT="0">
+                <COLUMNS COL1="REWARD_ID">
+                </COLUMNS>
+            </FOREIGN_KEY>
+            <FOREIGN_KEY NAME="FK_TABLE_BOOK_REWARDS_TWO" ID="{AC91E6DD-938B-479F-B224-463BEB3F3467}" CHILDID="{6665950A-0FB8-4373-A56B-118E31EDE761}" PARENTID="{302A41FB-3CE0-49AA-9267-4FF3BE45B095}" PARENT_CONS="PK_TABLE_BOOK" UA="1" DA="1" MT="0">
+                <COLUMNS COL1="BOOK_ID">
+                </COLUMNS>
+            </FOREIGN_KEY>
+            <FOREIGN_KEY NAME="FK_TABLE_ORDER_LIST" ID="{C3157B10-FE44-4DB7-922F-A33CE81FFF85}" CHILDID="{59EC49B0-B10E-4AC8-9899-D185648A4B17}" PARENTID="{F5D731D4-57A8-4A17-9F3A-C37746867A9B}" PARENT_CONS="PK_TABLE_ORDER" UA="1" DA="1" MT="0">
+                <COLUMNS COL1="ORDER_ID">
+                </COLUMNS>
+            </FOREIGN_KEY>
+            <FOREIGN_KEY NAME="FK_TABLE_ORDER_LIST_TABLE_BOOK" ID="{54236B85-6386-4558-84EB-85A00DA19213}" CHILDID="{59EC49B0-B10E-4AC8-9899-D185648A4B17}" PARENTID="{302A41FB-3CE0-49AA-9267-4FF3BE45B095}" PARENT_CONS="PK_TABLE_BOOK" UA="1" DA="1" MT="0">
+                <COLUMNS COL1="BOOK_ID">
+                </COLUMNS>
+            </FOREIGN_KEY>
+            <FOREIGN_KEY NAME="FK_TABLE_ORDER_TABLE_CLIENT" ID="{3A4C8BC4-33C0-4EC3-9398-4C77B94481B7}" CHILDID="{F5D731D4-57A8-4A17-9F3A-C37746867A9B}" PARENTID="{616DB6E8-6045-47D3-8C22-85A2BC717699}" PARENT_CONS="PK_TABLE_CLIENT" UA="1" DA="1" MT="0">
+                <COLUMNS COL1="CLIENT_ID">
+                </COLUMNS>
+            </FOREIGN_KEY>
+            <FOREIGN_KEY NAME="FK_TABLE_REVIEWS_TABLE_BOOK" ID="{F49865C5-65A5-4ED5-AE9D-B47F8BC5F96C}" CHILDID="{56ABCEB2-7154-4A99-B7AD-2C7E08955E58}" PARENTID="{302A41FB-3CE0-49AA-9267-4FF3BE45B095}" PARENT_CONS="PK_TABLE_BOOK" UA="1" DA="1" MT="0">
+                <COLUMNS COL1="BOOK_ID">
+                </COLUMNS>
+            </FOREIGN_KEY>
+            <FOREIGN_KEY NAME="FK_TABLE_REVIEWS_TABLE_CLIENT" ID="{C59A8FBD-67D9-4E37-B22C-F004D238444A}" CHILDID="{56ABCEB2-7154-4A99-B7AD-2C7E08955E58}" PARENTID="{616DB6E8-6045-47D3-8C22-85A2BC717699}" PARENT_CONS="PK_TABLE_CLIENT" UA="1" DA="1" MT="0">
+                <COLUMNS COL1="CLIENT_ID">
+                </COLUMNS>
+            </FOREIGN_KEY>
+        </FOREIGN_KEYS>
+        <INDICES>
+        </INDICES>
+        <TRIGGERS>
+        </TRIGGERS>
+        <CHECK_CONSTRAINTS>
+        </CHECK_CONSTRAINTS>
+        <UNIQUE_CONSTRAINTS>
+        </UNIQUE_CONSTRAINTS>
+        <LINKS>
+            <LINK OBJID="{683C6F39-E04E-4237-BDB8-B83D44F62C2E}" CHILDID="{302A41FB-3CE0-49AA-9267-4FF3BE45B095}" PARENTID="{B8291159-BBA0-4436-8D2C-69D4D446C7BC}" SP="94,62" DP="94,62">
+            </LINK>
+            <LINK OBJID="{37EA71D7-0A4C-408E-9349-353EE38D95D5}" CHILDID="{823A4DF3-90C8-4E11-977B-AEADD72891BE}" PARENTID="{BEEB181F-603D-497C-91DD-1C16086E3B47}" SP="70,27" DP="70,27">
+            </LINK>
+            <LINK OBJID="{B1460F57-C034-46CE-9891-670C548D06FD}" CHILDID="{823A4DF3-90C8-4E11-977B-AEADD72891BE}" PARENTID="{302A41FB-3CE0-49AA-9267-4FF3BE45B095}" SP="70,27" DP="70,27">
+            </LINK>
+            <LINK OBJID="{C5480C79-6957-40F9-AC54-EC2AE035441B}" CHILDID="{D8953BFB-1D1E-437B-AFFA-1FD781A15853}" PARENTID="{302A41FB-3CE0-49AA-9267-4FF3BE45B095}" SP="74,27" DP="74,27">
+            </LINK>
+            <LINK OBJID="{3F867CDE-441B-4684-861F-8D046EC45C5B}" CHILDID="{D8953BFB-1D1E-437B-AFFA-1FD781A15853}" PARENTID="{823B7805-3EB0-45E1-B413-101233DB7189}" SP="74,27" DP="74,27">
+            </LINK>
+            <LINK OBJID="{89DAB966-39C6-4F68-9DA0-7ECB9BF9C881}" CHILDID="{6665950A-0FB8-4373-A56B-118E31EDE761}" PARENTID="{9FDC528B-D1BA-471C-AF65-37DCA561B11D}" SP="70,34" DP="70,34">
+            </LINK>
+            <LINK OBJID="{AC91E6DD-938B-479F-B224-463BEB3F3467}" CHILDID="{6665950A-0FB8-4373-A56B-118E31EDE761}" PARENTID="{302A41FB-3CE0-49AA-9267-4FF3BE45B095}" SP="70,34" DP="70,34">
+            </LINK>
+            <LINK OBJID="{3A4C8BC4-33C0-4EC3-9398-4C77B94481B7}" CHILDID="{F5D731D4-57A8-4A17-9F3A-C37746867A9B}" PARENTID="{616DB6E8-6045-47D3-8C22-85A2BC717699}" SP="66,41" DP="66,41">
+            </LINK>
+            <LINK OBJID="{C3157B10-FE44-4DB7-922F-A33CE81FFF85}" CHILDID="{59EC49B0-B10E-4AC8-9899-D185648A4B17}" PARENTID="{F5D731D4-57A8-4A17-9F3A-C37746867A9B}" SP="59,41" DP="59,41">
+            </LINK>
+            <LINK OBJID="{54236B85-6386-4558-84EB-85A00DA19213}" CHILDID="{59EC49B0-B10E-4AC8-9899-D185648A4B17}" PARENTID="{302A41FB-3CE0-49AA-9267-4FF3BE45B095}" SP="59,41" DP="59,41">
+            </LINK>
+            <LINK OBJID="{F49865C5-65A5-4ED5-AE9D-B47F8BC5F96C}" CHILDID="{56ABCEB2-7154-4A99-B7AD-2C7E08955E58}" PARENTID="{302A41FB-3CE0-49AA-9267-4FF3BE45B095}" SP="81,48" DP="81,48">
+            </LINK>
+            <LINK OBJID="{C59A8FBD-67D9-4E37-B22C-F004D238444A}" CHILDID="{56ABCEB2-7154-4A99-B7AD-2C7E08955E58}" PARENTID="{616DB6E8-6045-47D3-8C22-85A2BC717699}" SP="81,48" DP="81,48">
+            </LINK>
+        </LINKS>
+        <COMMENTS>
+        </COMMENTS>
+        <REGIONS>
+        </REGIONS>
+        <DOCLINKS>
+        </DOCLINKS>
+        <SUBDIAGRAMS>
+        </SUBDIAGRAMS>
+    </ITEMS>
+</DIAGRAM>
